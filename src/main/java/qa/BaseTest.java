@@ -2,6 +2,7 @@ package qa; /**
  * Created by ben on 5/26/2015.
  */
 import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -55,6 +56,7 @@ public class BaseTest  {
         }
         return elements;
     }
+
     public void waitUntil(int seconds_to_wait){
 
         WebDriverWait wait = null;
